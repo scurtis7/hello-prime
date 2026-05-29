@@ -1,4 +1,12 @@
-<div class="card flex justify-center">
-  Header
-  <p-button label="Toggle Dark Mode" (onClick)="toggleDarkMode()"></p-button>
+<div class="card">
+  <p-menubar [model]="items">
+    <ng-template #start>
+    </ng-template>
+    <ng-template #end>
+      <div class="card flex justify-center">
+        <p-togglebutton [(ngModel)]="checked" (onChange)="toggleDarkMode()" onLabel="Light" offLabel="Dark" onIcon="pi pi-sun" offIcon="pi pi-moon" styleClass="w-36" ariaLabel="Toggle dark mode">
+        </p-togglebutton>
+      </div>
+    </ng-template>
+  </p-menubar>
 </div>
