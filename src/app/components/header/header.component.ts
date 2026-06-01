@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
             label: 'Form Components',
             icon: 'pi pi-book',
             command: () => {
-              this.router.navigate(['/footer']);
+              this.router.navigate(['/home']);
             }
           },
           {
