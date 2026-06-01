@@ -1,7 +1,31 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from "./components/home/home.component";
+import { FormCompsComponent } from "./components/form-comps/form-comps.component";
+import { ButtonCompsComponent } from "./components/button-comps/button-comps.component";
+import { DataCompsComponent } from "./components/data-comps/data-comps.component";
+import { PanelCompsComponent } from "./components/panel-comps/panel-comps.component";
+import { OverlayCompsComponent } from "./components/overlay-comps/overlay-comps.component";
+import { FileCompsComponent } from "./components/file-comps/file-comps.component";
+import { MenuCompsComponent } from "./components/menu-comps/menu-comps.component";
+import { ChartCompsComponent } from "./components/chart-comps/chart-comps.component";
+import { MessageCompsComponent } from "./components/message-comps/message-comps.component";
+import { MediaCompsComponent } from "./components/media-comps/media-comps.component";
+import { MiscCompsComponent } from "./components/misc-comps/misc-comps.component";
+import { UtilitiesCompsComponent } from "./components/utilities-comps/utilities-comps.component";
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'form-comps', component: FormCompsComponent },
+  { path: 'button-comps', component: ButtonCompsComponent },
+  { path: 'data-comps', component: DataCompsComponent },
+  { path: 'panel-comps', component: PanelCompsComponent },
+  { path: 'overlay-comps', component: OverlayCompsComponent },
+  { path: 'file-comps', component: FileCompsComponent },
+  { path: 'menu-comps', component: MenuCompsComponent },
+  { path: 'chart-comps', component: ChartCompsComponent },
+  { path: 'message-comps', component: MessageCompsComponent },
+  { path: 'media-comps', component: MediaCompsComponent },
+  { path: 'misc-comps', component: MiscCompsComponent },
+  { path: 'utilities-comps', component: UtilitiesCompsComponent },
   { path: '**', redirectTo: 'home' }
 ];
